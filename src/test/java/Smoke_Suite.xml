@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="day4.OrangeHRM_Login_Parameters"/>
+      <class name="day4.OrangeHRM_LoginScenario"/>
+      <class name="day4.OrangeHRMDDT_TestNG"/>
+      <class name="day5.Smoke_Suite"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

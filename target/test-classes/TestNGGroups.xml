@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="methods" thread-count="4">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="smoketest" />
+				<exclude name="sanitytest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="day6.TestNGGroups" />
+			<class name="day6.TestNGGroups2" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,41 @@
+package day6;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestNGGroups2 {
+ 
+
+
+ChromeDriver chDriver;
+
+	@Test(groups={"smoketest"})
+	  public void printSmoke() {
+		System.out.println("Smoke class2");
+	}
+
+	@Test(groups={"sanitytest"})
+	  public void printSmok2() {
+		System.out.println("Sanity TC2");
+	}
+	  
+	    
+	  @Test(groups={"smoketest"})
+	  public void Smoke1() {
+		System.out.println("Smoke class2");
+	  }
+
+
+	  
+}
