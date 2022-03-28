@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day9.FieldValidation">
+      <class name="day10.ExtentReportExample">
         <methods>
-          <include name="AddUsers_Page"/>
+          <include name="startReport"/>
           <include name="CloseBrowser"/>
-          <include name="LaunchBrowser"/>
-          <include name="VerifyAddedUser"/>
+          <include name="Sign_On"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- day9.FieldValidation -->
+      </class> <!-- day10.ExtentReportExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

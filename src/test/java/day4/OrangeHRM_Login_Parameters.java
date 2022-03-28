@@ -15,7 +15,7 @@ public class OrangeHRM_Login_Parameters {
 	ChromeDriver driver;
 
 	@Test
-	@Parameters({"uname","upass"})
+	//@Parameters({"uname","upass"})
 	public void Login(String uname,String upass) throws InterruptedException {
 
 		driver.findElement(By.name("txtUsername")).sendKeys(uname);

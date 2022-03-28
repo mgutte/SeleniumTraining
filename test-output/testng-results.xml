@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-24T11:50:01 IST" name="Default suite" finished-at="2022-03-24T11:51:38 IST" duration-ms="97171">
+  <suite started-at="2022-03-28T10:25:36 IST" name="Suite" finished-at="2022-03-28T10:26:04 IST" duration-ms="28433">
     <groups>
     </groups>
-    <test started-at="2022-03-24T11:50:01 IST" name="Default test" finished-at="2022-03-24T11:51:38 IST" duration-ms="97171">
-      <class name="day9.FindAllLinks">
-        <test-method signature="navigateToAllLinks()[pri:0, instance:day9.FindAllLinks@d5b810e]" started-at="2022-03-24T11:50:01 IST" name="navigateToAllLinks" finished-at="2022-03-24T11:51:38 IST" duration-ms="97145" status="PASS">
+    <test started-at="2022-03-28T10:25:36 IST" name="Test" finished-at="2022-03-28T10:26:04 IST" duration-ms="28433">
+      <class name="day7.CheckBox">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:day7.CheckBox@4efac082]" started-at="2022-03-28T10:25:36 IST" name="LaunchBrowser" finished-at="2022-03-28T10:25:38 IST" duration-ms="2443" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToAllLinks -->
-      </class> <!-- day9.FindAllLinks -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Login()[pri:1, instance:day7.CheckBox@4efac082]" started-at="2022-03-28T10:25:38 IST" name="Login" description="Login to OrangeHRM with valid credentials" finished-at="2022-03-28T10:25:51 IST" duration-ms="13062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Leave()[pri:2, instance:day7.CheckBox@4efac082]" started-at="2022-03-28T10:25:51 IST" name="Leave" finished-at="2022-03-28T10:25:59 IST" duration-ms="7932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Leave -->
+        <test-method signature="Logout()[pri:3, instance:day7.CheckBox@4efac082]" started-at="2022-03-28T10:25:59 IST" name="Logout" description="Logout from OrangeHRM" finished-at="2022-03-28T10:26:03 IST" duration-ms="4286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:day7.CheckBox@4efac082]" started-at="2022-03-28T10:26:03 IST" name="CloseBrowser" finished-at="2022-03-28T10:26:04 IST" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- day7.CheckBox -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

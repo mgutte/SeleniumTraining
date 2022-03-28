@@ -3,14 +3,6 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="day4.OrangeHRMDDT_TestNG">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="LaunchBrowser"/>
-          <include name="Login_Valid_Scenario" invocation-numbers="1"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- day4.OrangeHRMDDT_TestNG -->
       <class name="day4.OrangeHRM_Login_Parameters">
         <methods>
           <include name="Login"/>

@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -55,9 +56,9 @@ public class DeleteAllUsersWithSameName {
 
 	@Test(priority = 2)
 	public void Add_Employee() throws InterruptedException {
-		driver.findElementById("btnAdd").click();
+		driver.findElement(By.id("btnAdd")).click();
 		
-		Select SelectPass = new Select(driver.findElementById("systemUser_userType"));
+		Select SelectPass = new Select(driver.findElement(By.id("systemUser_userType")));
 		//SelectPass.selectByValue("1");
 		//SelectPass.selectByIndex(0);
 		SelectPass.selectByVisibleText("Admin");
