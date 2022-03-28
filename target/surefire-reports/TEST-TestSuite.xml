@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="27.545" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="16.72" tests="3" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
@@ -24,7 +24,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Selenium_Training\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12904480771968958829.tmp"/>
+    <property name="classworlds.conf" value="D:\Selenium_Training\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10652550883688562288.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\mgp0966\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/mgp0966/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/mgp0966/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Enterprise Vault\EVClient\x64\;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Program Files\Java\jre1.8.0_321\bin;C:\Users\mgp0966\AppData\Local\Microsoft\WindowsApps;C:\Users\mgp0966\AppData\Local\Programs\Git\cmd;C:\WINDOWS\system32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -40,7 +40,7 @@
     <property name="java.class.path" value="C:\Users\mgp0966\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20210129-0849\jars\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.home" value="C:\Users\mgp0966\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,7 +55,61 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Login" classname="day7.CheckBox" time="11.343"/>
-  <testcase name="Leave" classname="day7.CheckBox" time="8.146"/>
-  <testcase name="Logout" classname="day7.CheckBox" time="4.507"/>
+  <testcase name="Login" classname="day7.CheckBox" time="12.047">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Dashboard&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;&#10;System info: host: &apos;PG02802S&apos;, ip: &apos;10.11.25.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=link text, value=Dashboard}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a01815d54b6c6fe356cd84c22f9e6b11" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Dashboard"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'PG02802S', ip: '10.11.25.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=link text, value=Dashboard}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a01815d54b6c6fe356cd84c22f9e6b11
+	at day7.CheckBox.Login(CheckBox.java:26)
+</failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 61097
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 28, 2022 11:37:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 28, 2022 11:37:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 97
+Mar 28, 2022 11:37:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 97
+]]></system-err>
+  </testcase>
+  <testcase name="Leave" classname="day7.CheckBox" time="0.027">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Leave&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;&#10;System info: host: &apos;PG02802S&apos;, ip: &apos;10.11.25.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=link text, value=Leave}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a01815d54b6c6fe356cd84c22f9e6b11" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Leave"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'PG02802S', ip: '10.11.25.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=link text, value=Leave}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a01815d54b6c6fe356cd84c22f9e6b11
+	at day7.CheckBox.Leave(CheckBox.java:35)
+</failure>
+  </testcase>
+  <testcase name="Logout" classname="day7.CheckBox" time="0.016">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Welcome&apos;)]&quot;}&#10;  (Session info: chrome=99.0.4844.84)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;&#10;System info: host: &apos;PG02802S&apos;, ip: &apos;10.11.25.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=xpath, value=//a[contains(text(),&apos;Welcome&apos;)]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a01815d54b6c6fe356cd84c22f9e6b11" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'PG02802S', ip: '10.11.25.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a01815d54b6c6fe356cd84c22f9e6b11, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a01815d54b6c6fe356cd84c22f9e6b11
+	at day7.CheckBox.Logout(CheckBox.java:45)
+</failure>
+  </testcase>
 </testsuite>
